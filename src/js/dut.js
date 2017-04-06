@@ -51,4 +51,6 @@ $('body').on('click', '[data-behavior~="toggle-popover"]', function(event) {
     $target.addClass('dut-popover--visible');
   }
 
+  return false;
+
 })

@@ -26,7 +26,8 @@
     color: $color-fsa-white;
     text-align: right;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    position: relative;
   }
 
 }

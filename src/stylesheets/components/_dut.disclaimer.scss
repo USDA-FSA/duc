@@ -20,8 +20,24 @@
 
   &__app-name {
 
-    font-weight: $font-bold;
-    text-transform: uppercase;
+    display: none;
+
+    @include breakpoint(M) {
+
+      font-weight: $font-bold;
+      text-transform: uppercase;
+
+      display: inline-block;
+      max-width: 60ch;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+
+    }
+
+    @media (min-width: 960px) {
+      max-width: 100ch;
+    }
 
     &:before {
       .dut-disclaimer__abbr + & {
@@ -35,13 +51,24 @@
 
   &__abbr {
 
-    &:before {
-      .dut-disclaimer__app-name + & {
-        content: '-';
-        margin-left: ($size-base / 2);
-        margin-right: $size-base;
+    display: inline-block;
+    overflow: hidden;
+    font-weight: $font-bold;
+
+    @include breakpoint(M) {
+
+      font-weight: $font-normal;
+
+      &:before {
+        .dut-disclaimer__app-name + & {
+          content: '-';
+          margin-left: ($size-base / 2);
+          margin-right: $size-base;
+        }
       }
+
     }
+
 
   }
 
