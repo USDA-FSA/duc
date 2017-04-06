@@ -1,4 +1,4 @@
-.pcp-header-TEMP {
+.dut-header-TEMP {
 
   padding-left: $size-default;
   padding-right: $size-default;
@@ -21,7 +21,7 @@
     max-width: $site-max-width;
     padding: $size-medium 0;
 
-    .pcp-header-TEMP--project & {
+    .dut-header-TEMP--project & {
       padding: $size-base 0;
     }
 

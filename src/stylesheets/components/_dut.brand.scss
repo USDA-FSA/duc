@@ -1,4 +1,4 @@
-.pcp-brand {
+.dut-brand {
 
   @include clearfix;
 
@@ -93,8 +93,8 @@
 }
 
 // scss-lint:disable QualifyingElement
-a.pcp-brand__agency:hover,
-a.pcp-brand__agency:active,
-a.pcp-brand__agency:focus {
+a.dut-brand__agency:hover,
+a.dut-brand__agency:active,
+a.dut-brand__agency:focus {
   color: $color-fsa-white;
 }

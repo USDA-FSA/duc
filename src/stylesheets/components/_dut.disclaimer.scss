@@ -1,4 +1,4 @@
-.pcp-disclaimer {
+.dut-disclaimer {
 
   &__stage {
 
@@ -24,7 +24,7 @@
     text-transform: uppercase;
 
     &:before {
-      .pcp-disclaimer__abbr + & {
+      .dut-disclaimer__abbr + & {
         content: '-';
         margin-left: ($size-base / 2);
         margin-right: $size-base;
@@ -36,7 +36,7 @@
   &__abbr {
 
     &:before {
-      .pcp-disclaimer__app-name + & {
+      .dut-disclaimer__app-name + & {
         content: '-';
         margin-left: ($size-base / 2);
         margin-right: $size-base;

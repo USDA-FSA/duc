@@ -9,7 +9,7 @@
   }
 }
 
-.pcp-popover {
+.dut-popover {
 
   $arrow-size: $size-small;
 
@@ -108,7 +108,7 @@
 
   &__close {
 
-    @include pcp-button-reset;
+    @include dut-button-reset;
     position: absolute;
     top: -$size-small;
     right: -$size-small;

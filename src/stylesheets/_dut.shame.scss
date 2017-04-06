@@ -13,11 +13,11 @@
 // -----------------------------------------------------------------------------
 // PROJECT PROTOTYPE
 
-.pcp-marker-demo {
+.dut-marker-demo {
   position: relative;
 }
 
-.pcp-prototype-list {
+.dut-prototype-list {
 
   @include breakpoint(M) {
 
@@ -67,7 +67,7 @@
 
 }
 
-.pcp-code-block {
+.dut-code-block {
 
   background-color: white;
   border: 1px solid $color-fsa-tertiary-100;
