@@ -1,9 +1,8 @@
-.pcp-footer-TEMP {
+.dut-footer-TEMP {
 
-  margin-top: $size-extra-large;
   padding-left: $size-default;
   padding-right: $size-default;
-  background-color: $color-fsa-tertiary-100;
+  background-color: $color-fsa-tertiary-300;
 
   &__bd {
     margin-left: auto;
@@ -11,7 +10,7 @@
     max-width: $site-max-width;
     text-align: center;
     padding: 11vh 0;
-    color: $color-fsa-tertiary-300;
+    color: white;
   }
 
 }

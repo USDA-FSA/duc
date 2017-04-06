@@ -1,4 +1,4 @@
-.pcp-header {
+.dut-header {
 
   background-color: #fff;
   padding: 1.5rem 0;
@@ -26,7 +26,8 @@
     color: $color-fsa-white;
     text-align: right;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    position: relative;
   }
 
 }

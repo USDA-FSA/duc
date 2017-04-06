@@ -32,8 +32,8 @@
 
 $('body').on('click', '[data-behavior~="popover-dismiss"]', function(event) {
   var $self = $(this);
-  var $component = $self.closest('.pcp-popover');
-  $component.removeClass('pcp-popover--visible');
+  var $component = $self.closest('.dut-popover');
+  $component.removeClass('dut-popover--visible');
 })
 
 $('body').on('click', '[data-behavior~="toggle-popover"]', function(event) {
@@ -41,14 +41,16 @@ $('body').on('click', '[data-behavior~="toggle-popover"]', function(event) {
   var $self = $(this);
   var $component = $self.closest('.fsa-field');
   var $target = $('#' + $self.attr('data-target'));
-  var $targetPeers = $('.pcp-popover');
+  var $targetPeers = $('.dut-popover');
 
-  if ($target.hasClass('pcp-popover--visible')) {
-    $targetPeers.removeClass('pcp-popover--visible');
-    $target.removeClass('pcp-popover--visible');
+  if ($target.hasClass('dut-popover--visible')) {
+    $targetPeers.removeClass('dut-popover--visible');
+    $target.removeClass('dut-popover--visible');
   } else {
-    $targetPeers.removeClass('pcp-popover--visible');
-    $target.addClass('pcp-popover--visible');
+    $targetPeers.removeClass('dut-popover--visible');
+    $target.addClass('dut-popover--visible');
   }
+
+  return false;
 
 })

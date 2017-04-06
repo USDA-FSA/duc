@@ -110,7 +110,7 @@ module.exports = function (grunt) {
     sass: {
       default: {
         files: {
-          'dist/css/pcp.css': 'src/stylesheets/pcp.scss'
+          'dist/css/dut.css': 'src/stylesheets/dut.scss'
         },
         options: {
           sourceMap: true,
@@ -119,7 +119,7 @@ module.exports = function (grunt) {
       },
       minify: {
         files: {
-          'dist/css/pcp.min.css': 'src/stylesheets/pcp.scss'
+          'dist/css/dut.min.css': 'src/stylesheets/dut.scss'
         },
         options: {
           sourceMap: true,
