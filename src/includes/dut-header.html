@@ -1,14 +1,15 @@
 <div class="dut-header">
-  <div class="dut-header__bd">
-    <div class="dut-header__prop">
-      {% include: 'includes/dut-brand.html' %}
+    <div class="dut-header__bd">
+        <div class="dut-header__prop">
+            {% include: 'includes/dut-brand.html' %}
+        </div>
+        <div class="dut-header__options">
+            <a href="/"><img src="img/ic_help_white_18px.svg" alt="Help Icon" width="18px" /></a>
+            <a class="TEMP-PROFILE-HEADER-LINK-REFACTOR-REBUILD-THIS-IF-YOU-PLEASE" role="button" data-behavior="toggle-popover" data-target="popover-profile" title="View Profile" href="#popover-profile">
+                <span class="TEMP-PROFILE-HEADER-LINK-REFACTOR-REBUILD-THIS-IF-YOU-PLEASE__name">Michael McGuinness</span>
+                <img src="img/ic_account_circle_white_24px.svg" alt="User Icon" width="24px" /><span class="TEMP-PROFILE-HEADER-LINK-REFACTOR-REBUILD-THIS-IF-YOU-PLEASE__arrow"><img src="img/ic_expand_more_white_24px.svg" alt="Expand User Controls" width="24px" /></span>
+            </a>
+            {% include: 'includes/dut-popover.profile.html' %}
+        </div>
     </div>
-    <div class="dut-header__options">
-      <a class="TEMP-PROFILE-HEADER-LINK-REFACTOR-REBUILD-THIS-IF-YOU-PLEASE" role="button" data-behavior="toggle-popover" data-target="popover-profile" title="View Profile" href="#popover-profile">
-        <span class="TEMP-PROFILE-HEADER-LINK-REFACTOR-REBUILD-THIS-IF-YOU-PLEASE__name">Sam Malone</span>
-        <span class="TEMP-PROFILE-HEADER-LINK-REFACTOR-REBUILD-THIS-IF-YOU-PLEASE__arrow">▼</span>
-      </a>
-      {% include: 'includes/dut-popover.profile.html' %}
-    </div>
-  </div>
 </div>
