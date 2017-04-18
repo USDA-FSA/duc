@@ -10,10 +10,14 @@
   overflow-wrap: break-word;
 }
 
-.TEMP-PROFILE-HEADER-LINK-REFACTOR-REBUILD-THIS-IF-YOU-PLEASE {
+.dut-header-usercontrol {
 
   color: $color-fsa-white;
   text-decoration: none;
+    
+    outline: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
 
   &:visited,
   &:hover,
@@ -22,10 +26,19 @@
     color: white !important; // this is getting lazy
   }
 
+    
   &__name {
-    .TEMP-PROFILE-HEADER-LINK-REFACTOR-REBUILD-THIS-IF-YOU-PLEASE:hover & {
+    
+      display: none;
+
+    @include breakpoint(L) {
+      display: inline;
+    }
+      
+    .dut-header-usercontrol:hover & {
       text-decoration: underline;
     }
+      
   }
 
   &__arrow {
@@ -35,8 +48,9 @@
     font-size: .9em;
 
   }
-
+    
 }
+
 
 // -----------------------------------------------------------------------------
 // PROJECT PROTOTYPE
