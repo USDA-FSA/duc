@@ -32,6 +32,8 @@
         
     }
     &__opencontrols {
+        
+        display: flex;
         text-decoration: none;
         color: $color-fsa-white;
         //glow removal
@@ -55,15 +57,12 @@
     }
     &__help {
         display: flex;
-        margin-right: $size-small;
     }
     &__name {
         display: none;
         
         @include breakpoint(L) {
-            height: 100px;
             margin-right: $size-base;
-            margin-bottom: $size-default;
             display: inline;
         }
     }
@@ -71,5 +70,8 @@
         color: inherit;
         text-decoration: none;
         font-size: .9em;
+    }
+    &__seperator {
+        margin: 0 $size-small;
     }
 }
