@@ -1,0 +1,256 @@
+/*
+- Name: megamenu.js - style.css
+- Version: 1.0
+- Latest update: 29.01.2016.
+- Author: Mario Loncarek
+- Author web site: http://marioloncarek.com
+*/
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+megamenu.js STYLE STARTS HERE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Screen style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.megamenu-container {
+    width: 1040px;
+    margin: 0 auto;
+    background: $color-fsa-tertiary-100;
+}
+
+.megamenu-mobile {
+    display: none;
+    padding: $size-default;
+}
+
+.megamenu-mobile:after {
+    content: "\f394";
+    font-family: "Ionicons";
+    font-size: $font-size-4;
+    padding: 0;
+    float: right;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-25%);
+    -ms-transform: translateY(-25%);
+    transform: translateY(-25%);
+}
+
+.megamenu-dropdown-icon:before {
+    content: "\f489";
+    font-family: "Ionicons";
+    display: none;
+    cursor: pointer;
+    float: right;
+    padding: $size-small $size-default;
+    background: $color-fsa-tertiary-100;
+    color: $color-fsa-tertiary;
+}
+
+.megamenu > ul {
+    margin: 0 auto;
+    width: auto;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    /* IF .menu position=relative -> ul = container width, ELSE ul = 100% width */
+    box-sizing: border-box;
+}
+
+.megamenu > ul:before,
+.megamenu > ul:after {
+    content: "";
+    display: table;
+}
+
+.megamenu > ul:after {
+    clear: both;
+}
+
+.megamenu > ul > li {
+    float: left;
+    width: auto;
+    background: $color-fsa-tertiary-100;
+    padding: 0;
+    margin: 0;
+}
+
+.megamenu-subnav-selected {
+    border-bottom: 3px solid $color-fsa-secondary;
+}
+
+.megamenu > ul > li a {
+    text-decoration: none;
+    padding: $size-small $size-medium;
+    display: block;
+}
+
+.megamenu > ul > li:hover {
+    background: $color-fsa-tertiary-100;
+}
+
+.megamenu > ul > li > ul {
+    display: none;
+    width: 100%;
+    background: $color-fsa-tertiary-100;
+    padding: $size-small;
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.megamenu > ul > li > ul:before,
+.megamenu > ul > li > ul:after {
+    content: "";
+    display: table;
+}
+
+.megamenu > ul > li > ul:after {
+    clear: both;
+}
+
+.megamenu > ul > li > ul > li {
+    margin: 0;
+    padding-bottom: 0;
+    list-style: none;
+    width: 25%;
+    background: none;
+    float: left;
+}
+
+.megamenu-category-header {
+    color: $color-fsa-tertiary-300;
+    padding: $size-small $size-default;
+    width: 85%;
+    display: block;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+
+/* old code replaced by .megamenu-category-header class
+
+.megamenu > ul > li > ul > li a {
+    color: $color-fsa-tertiary-200;
+    padding: $size-base 0;
+    width: 95%;
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+*/
+
+.megamenu > ul > li > ul > li > ul {
+    display: block;
+    padding: 0;
+    margin: $size-small 0 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.megamenu > ul > li > ul > li > ul:before,
+.megamenu > ul > li > ul > li > ul:after {
+    content: "";
+    display: table;
+}
+
+.megamenu > ul > li > ul > li > ul:after {
+    clear: both;
+}
+
+.megamenu > ul > li > ul > li > ul > li {
+    float: left;
+    width: 100%;
+    padding: $size-base 0;
+    margin: 0;
+    font-size: $font-size-3;
+}
+
+.megamenu > ul > li > ul > li > ul > li a {
+    border: 0;
+}
+
+.megamenu > ul > li > ul.normal {
+    width: 250px;
+    left: auto;
+    padding: $size-small $size-default;
+}
+
+.megamenu > ul > li > ul.normal > li {
+    width: 100%;
+}
+
+.megamenu > ul > li > ul.normal > li a {
+    border: 0;
+    padding: $size-small 0;
+}
+
+
+.remove-glow {
+    outline: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.subnav {
+    border-top: 1px solid #ddd;
+}
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Mobile style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 959px) {
+    .megamenu-container {
+        width: 100%;
+    }
+    .megamenu-mobile {
+        display: block;
+    }
+    .megamenu-dropdown-icon:before {
+        display: block;
+    }
+    .megamenu > ul {
+        display: none;
+    }
+    .megamenu > ul > li {
+        width: 100%;
+        float: none;
+        display: block;
+    }
+    .megamenu > ul > li a {
+        padding: $size-small;
+        width: 100%;
+        display: block;
+    }
+    .megamenu > ul > li > ul {
+        position: relative;
+    }
+    .megamenu > ul > li > ul.normal {
+        width: 100%;
+    }
+    .megamenu > ul > li > ul > li {
+        float: none;
+        width: 100%;
+        margin-top: $size-default;
+    }
+    .megamenu > ul > li > ul > li:first-child {
+        margin: 0;
+    }
+    .megamenu > ul > li > ul > li > ul {
+        position: relative;
+    }
+    .megamenu > ul > li > ul > li > ul > li {
+        float: none;
+    }
+    .megamenu .show-on-mobile {
+        display: block;
+    }
+}

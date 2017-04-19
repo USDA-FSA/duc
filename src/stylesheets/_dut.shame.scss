@@ -10,33 +10,7 @@
   overflow-wrap: break-word;
 }
 
-.TEMP-PROFILE-HEADER-LINK-REFACTOR-REBUILD-THIS-IF-YOU-PLEASE {
 
-  color: $color-fsa-white;
-  text-decoration: none;
-
-  &:visited,
-  &:hover,
-  &:active,
-  &:focus {
-    color: white !important; // this is getting lazy
-  }
-
-  &__name {
-    .TEMP-PROFILE-HEADER-LINK-REFACTOR-REBUILD-THIS-IF-YOU-PLEASE:hover & {
-      text-decoration: underline;
-    }
-  }
-
-  &__arrow {
-
-    color: inherit;
-    text-decoration: none;
-    font-size: .9em;
-
-  }
-
-}
 
 // -----------------------------------------------------------------------------
 // PROJECT PROTOTYPE
