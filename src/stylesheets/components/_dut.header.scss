@@ -1,39 +1,75 @@
 .dut-header {
-
-  background-color: #fff;
-  padding: 1.5rem 0;
-  background-color: $color-fsa-primary;
-  text-align: left;
-
-  &__bd {
-
-    display: flex;
-    max-width: ($site-max-width + 24px);
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 $size-default;
+    padding: $size-default 0; //1.5rem 0;
     text-align: left;
+    text-decoration: none;
     color: $color-fsa-white;
-
-  }
-
-  &__prop {
-    flex: 1;
-    padding-right: $size-small;
-  }
-
-  &__options {
-    color: $color-fsa-white;
-    text-align: right;
-    display: flex;
-    align-items: flex-end;
-    position: relative;
-  }
-    &__nav{
+    background-color: $color-fsa-primary;
+    &:visited,
+    &:hover,
+    &:active,
+    &:focus {
+        color: $color-fsa-white !important; // this is getting lazy
+    }
+    &__bd {
+        display: flex;
+        max-width: ($site-max-width + 24px);
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 $size-default;
+        text-align: left;
+        color: $color-fsa-white;
+    }
+    &__prop {
+        flex: 1;
+        padding-right: $size-small;
+    }
+    &__options {
+        color: $color-fsa-white;
+        text-align: right;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        
+    }
+    &__opencontrols {
+        text-decoration: none;
+        color: $color-fsa-white;
+        //glow removal
+        outline: none;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        
+        &:visited,
+        &:active,
+        &:hover {
+            //text-decoration: underline;
+        },
+        &:focus {
+            color: $color-fsa-white !important; // this is getting lazy
+        }
+    }
+    &__nav {
         width: 100%;
         margin: 0 auto;
         background: $color-fsa-tertiary-100;
     }
-    
-    
+    &__help {
+        display: flex;
+        margin-right: $size-small;
+    }
+    &__name {
+        display: none;
+        
+        @include breakpoint(L) {
+            height: 100px;
+            margin-right: $size-base;
+            margin-bottom: $size-default;
+            display: inline;
+        }
+    }
+    &__arrow {
+        color: inherit;
+        text-decoration: none;
+        font-size: .9em;
+    }
 }
