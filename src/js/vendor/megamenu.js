@@ -16,7 +16,7 @@ $(document).ready(function () {
 
 
     $(".megamenu-topnav > a").each(function(){
-        $(this).append(' <img src="/img/angle-arrow-down-topnav.svg" width="10px"/>');
+        $(this).append(' <img src="img/angle-arrow-down-topnav.svg" width="10px"/>');
     });
 
     $(".megamenu > ul").before("<a href=\"#\" class=\"megamenu-mobile\">Menu</a>");
