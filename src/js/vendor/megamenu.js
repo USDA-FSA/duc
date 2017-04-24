@@ -51,6 +51,14 @@ var MegaMenu = (function () {
             return false;
 
         });
+
+
+        $(".megamenu-mobile").click(function (e) {
+            $(".megamenu > ul").toggleClass('show-on-mobile');
+            e.preventDefault();
+        });
+        
+        $(".megamenu-mobile").addClass('remove-glow');
     });
 
 
