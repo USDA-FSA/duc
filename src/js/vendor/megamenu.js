@@ -10,9 +10,11 @@ var MegaMenu = (function () {
         var topnavAnchor = $(".megamenu-topnav > a");
         var topnavList = $(".megamenu > ul");
         var subnavSelected = "megamenu-subnav-selected";
+        var subnavUnselected = "megamenu-subnav-unselected";
 
         // remove blue glow
         topnav.find('a').addClass('remove-glow');
+        //topnav.find('a').addClass(subnavUnselected);
 
         // Add down arrow to topnav items with a subnav
         topnavAnchor.each(function () {

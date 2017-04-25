@@ -83,6 +83,10 @@ Screen style's
     border-bottom: 3px solid $color-fsa-secondary;
 }
 
+.megamenu-subnav-unselected {
+    border-bottom: 3px solid $color-fsa-tertiary-100;
+}
+
 .megamenu > ul > li a {
     text-decoration: none;
     padding: $size-small $size-medium;
