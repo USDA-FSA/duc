@@ -2,10 +2,10 @@
     
     @include clearfix;
     
-    margin-top: $size-small; 
+    margin-top: $size-default; 
     
     &__abbr {
-        /*font-family: $font-mono;*/
+
         font-size: $size-medium;
         display: inline;
         overflow: hidden;
@@ -29,6 +29,8 @@
         
         @include breakpoint(L) {
             display: inline;
+            font-size: $size-medium;
+            font-weight:lighter;
         }
     }
 }
