@@ -1,0 +1,34 @@
+.dut-appname {
+    
+    @include clearfix;
+    
+    margin-top: $size-small; 
+    
+    &__abbr {
+        /*font-family: $font-mono;*/
+        font-size: $size-medium;
+        display: inline;
+        overflow: hidden;
+        font-weight: $font-bold;
+        margin-bottom: 0;
+        
+        @include breakpoint(L) {
+            display: inline;
+            &:after {
+                font-weight: 100;
+                content: ' | ';
+                margin-left: ($size-base / 2);
+                margin-right: $size-base;
+            }
+        }
+    }
+    
+    &__full {
+        
+        display: none;
+        
+        @include breakpoint(L) {
+            display: inline;
+        }
+    }
+}

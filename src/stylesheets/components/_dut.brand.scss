@@ -24,6 +24,27 @@
     color: $color-fsa-white;
 
   }
+    
+    &__abbr {
+
+    display: inline-block;
+    overflow: hidden;
+    font-weight: $font-bold;
+
+    @include breakpoint(M) {
+
+      font-weight: $font-normal;
+
+      &:before {
+        .dut-brand__app-name + & {
+          content: '-';
+          margin-left: ($size-base / 2);
+          margin-right: $size-base;
+        }
+      }
+
+    }
+    }
 
   &__usda {
 
