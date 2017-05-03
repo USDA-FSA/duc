@@ -1,10 +1,8 @@
 .dut-global-header {
-
-  &__stage {
-
-    display: block;
-    margin: 0;
-
+    &__stage {
+        display: block;
+        margin: 0;
+        /*
     a {
 
       color: inherit;
@@ -15,91 +13,81 @@
       }
 
     }
-
-  }
-
-  &__agency {
-
-    display: none;
-
-    @include breakpoint(M) {
-
-      font-weight: $font-bold;
-      /*text-transform: uppercase;*/
-
-      display: inline-block;
-      max-width: 60ch;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow: hidden;
-
+      */
     }
-
-    @media (min-width: 960px) {
-      max-width: 100ch;
-    }
-
-    &:before {
-      .dut-disclaimer__abbr + & {
-        content: '-';
-        margin-left: ($size-base / 2);
-        margin-right: $size-base;
-      }
-    }
-
-  }
-
-  &__abbr {
-
-    display: inline-block;
-    overflow: hidden;
-    font-weight: $font-bold;
-
-    @include breakpoint(M) {
-
-      font-weight: $font-normal;
-
-      &:before {
-        .dut-disclaimer__app-name + & {
-          content: '-';
-          margin-left: ($size-base / 2);
-          margin-right: $size-base;
+    &__agency {
+        display: none;
+        @include breakpoint(M) {
+            font-weight: $font-bold;
+            /*text-transform: uppercase;*/
+            display: inline-block;
+            max-width: 60ch;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            &:hover {
+                text-decoration: underline;
+                color: $white;
+            }
         }
-      }
-
+        @media (min-width: 960px) {
+            max-width: 100ch;
+        }
+        &:before {
+            .dut-disclaimer__abbr + & {
+                content: '-';
+                margin-left: ($size-base / 2);
+                margin-right: $size-base;
+            }
+        }
     }
-
-
-  }
-
-  &__official {
-
-    text-transform: capitalize;
-
-    @include breakpoint(L) {
-      text-transform: none;
+    &__agency-link {
+        color: inherit;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+            color: $white;
+        }
     }
-
-  }
-
-  &__hide-on-mobile {
-
-    display: none;
-
-    @include breakpoint(M) {
-      display: inline;
+    &__dept-link {
+        color: inherit;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+            color: $white;
+        }
     }
-
-
-  }
-    
+    &__abbr {
+        display: inline-block;
+        overflow: hidden;
+        font-weight: $font-bold;
+        @include breakpoint(M) {
+            font-weight: $font-normal;
+            &:before {
+                .dut-disclaimer__app-name + & {
+                    content: '-';
+                    margin-left: ($size-base / 2);
+                    margin-right: $size-base;
+                }
+            }
+        }
+    }
+    &__official {
+        text-transform: capitalize;
+        @include breakpoint(L) {
+            text-transform: none;
+        }
+    }
+    &__hide-on-mobile {
+        display: none;
+        @include breakpoint(M) {
+            display: inline;
+        }
+    }
     &__hide-on-large {
-    
         display: inline;
-        
         @include breakpoint(M) {
             display: none;
         }
     }
-
 }
