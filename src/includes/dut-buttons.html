@@ -1,0 +1,117 @@
+<div class="dut-button-demo">
+    <div class="dut-button-demo__section">
+        <button class="fsa-btn fsa-btn--primary" type="button">Primary</button>
+        <button class="fsa-btn fsa-btn--secondary" type="button">Secondary</button>
+        <button class="fsa-btn fsa-btn--tertiary" type="button">Tertiary</button>
+        <button class="fsa-btn fsa-btn--alt" type="button">Alt</button>
+        <button class="fsa-btn fsa-btn--primary" disabled="disabled" type="button">Disabled</button>
+    </div>
+
+    <div class="dut-button-demo__section">
+
+        <h4>Notes:</h4>
+        <ul>
+            <li>A Cancel button SHALL not be used unless the the form uses a multi-step process.</li>
+            <li>A Cancel or Close button should clear the contents of the form for security/privacy.</li>
+            <li>
+                A Cancel button should always be used in a Multi-step or multiple screen process so the User feels safe that they are aborting a process.</li>
+            <li>When used, the Cancel button SHALL always appear to the right of the Submit button and appear as a link or Alternative button.</li>
+            <li>In a multi-step or multiple screen process, Back and Next SHALL always be used, and Submit SHALL always conclude the process and form submission.</li>
+            <li>A Reset or Clear button SHALL not be used on a form, because studies indicate a much higher percentage of errors.</li>
+        </ul>
+
+    </div>
+    <div class="dut-button-demo__section">
+        <h2>Single Screen Form</h2>
+        <!--<p>In use with a single screen form, a Clear button CAN be used to clear the contents of the form. A Submit button SHALL always be used. The Submit button SHALL always be the far right-side button in a sequence. See below example.</p>-->
+        <div class="dut-button-demo__form">
+
+            <input class="fsa-input fsa-input--block dut-button-demo__input" type="text" name="some_name" value="Lorem">
+            <input class="fsa-input fsa-input--block dut-button-demo__input" type="text" name="some_name" value="Ipsum">
+            <hr/>
+            <button class="fsa-btn fsa-btn--primary" type="button">Submit</button>
+
+        </div>
+
+    </div>
+    <div class="dut-button-demo__section">
+        <h2>Single Screen Form - Popup Window</h2>
+         <div class="dut-button-demo__popup">
+            <div class="dut-button-demo__popup-header">Close <img src="img/close.svg" width="12px" /></div>
+            <div class="dut-button-demo__form">
+
+                <input class="fsa-input fsa-input--block dut-button-demo__input" type="text" name="some_name" value="Lorem">
+            <input class="fsa-input fsa-input--block dut-button-demo__input" type="text" name="some_name" value="Ipsum">
+                <hr/>
+                <button class="fsa-btn fsa-btn--primary" type="button">Submit</button>
+                <button class="fsa-btn fsa-btn--alt" type="button">Cancel</button>
+                
+            </div>
+        </div>
+    </div>
+    <div class="dut-button-demo__section">
+        <h2>Multiple Screen Form</h2>
+        <div class="dut-button-demo__form">
+            <h3>Step 2 of 5</h3>
+            <input class="fsa-input fsa-input--block dut-button-demo__input" type="text" name="some_name" value="Lorem">
+            <input class="fsa-input fsa-input--block dut-button-demo__input" type="text" name="some_name" value="Ipsum">
+            <hr/>
+            <button class="fsa-btn fsa-btn--primary" type="button">Back</button>
+            <button class="fsa-btn fsa-btn--primary" type="button">Next</button>
+            <a href="#" class="dut-button-demo__cancel-link">Cancel</a>
+
+        </div>
+    </div>
+    <div class="dut-button-demo__section">
+        <h2>Multiple Screen Form (Final Step)</h2>
+        
+        <div class="dut-button-demo__form">
+            <h3>Step 5 of 5</h3>
+            <input class="fsa-input fsa-input--block dut-button-demo__input" type="text" name="some_name" value="Lorem">
+            <input class="fsa-input fsa-input--block dut-button-demo__input" type="text" name="some_name" value="Ipsum">
+            <hr/>
+            <button class="fsa-btn fsa-btn--primary" type="button">Back</button>
+            <button class="fsa-btn fsa-btn--primary" type="button">Submit</button>
+            <a href="#" class="dut-button-demo__cancel-link">Cancel</a>
+
+        </div>
+    </div>
+    <div class="dut-button-demo__section">
+        <h2>Multiple Screen Form - Popup Window</h2>
+        <div class="dut-button-demo__popup">
+            <div class="dut-button-demo__popup-header">Close <img src="img/close.svg" width="12px" /></div>
+            <div class="dut-button-demo__form">
+                <h3>Step 2 of 5</h3>
+
+                <input class="fsa-input fsa-input--block dut-button-demo__input" type="text" name="some_name" value="Lorem">
+            <input class="fsa-input fsa-input--block dut-button-demo__input" type="text" name="some_name" value="Ipsum">
+
+                <hr/>
+                <button class="fsa-btn fsa-btn--primary" type="button">Back</button>
+                <button class="fsa-btn fsa-btn--primary" type="button">Next</button>
+                <button class="fsa-btn fsa-btn--alt" type="button">Cancel</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="dut-button-demo__section">
+        <h2>Multiple Screen Form - Popup Window (Final Step)</h2>
+        <!--    <p>In use with a multiple step/screen form that opens within a popup window, a Clear button CAN be used to clear the contents of the form. A Cancel button SHALL be used in order to cancel the action and close the popup window. A Submit button SHALL always be used. The Cancel button SHALL always be used to the left of the Submit button. The Submit button SHALL always be the far right-side button in a sequence. See below example.</p>-->
+        <div class="dut-button-demo__popup">
+            <div class="dut-button-demo__popup-header">Close <img src="img/close.svg" width="12px" /></div>
+            <div class="dut-button-demo__form">
+                <h3>Step 5 of 5</h3>
+
+                <input class="fsa-input fsa-input--block dut-button-demo__input" type="text" name="some_name" value="Lorem">
+            <input class="fsa-input fsa-input--block dut-button-demo__input" type="text" name="some_name" value="Ipsum">
+                <hr/>
+                <button class="fsa-btn fsa-btn--primary" type="button">Back</button>
+                <button class="fsa-btn fsa-btn--primary" type="button">Submit</button>
+                <button class="fsa-btn fsa-btn--alt" type="button">Cancel</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
