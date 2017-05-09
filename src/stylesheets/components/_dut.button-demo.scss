@@ -1,0 +1,33 @@
+.dut-button-demo {
+    
+    margin-bottom: $size-medium;
+    
+    &__section {
+        display: block;
+        
+        
+        @include breakpoint(L) {
+            display: inline;
+            padding-bottom: $size-base * 100;
+        }
+    }
+    &__popup {
+        border: solid 1px $color-fsa-tertiary-900;
+        padding: $size-default;
+        width: $size-base * 100;
+    }
+    &__popup-header {
+        margin-bottom: $size-small;
+        text-align: right;
+    }
+    &__cancel-link {
+        margin-left: $size-default;
+        margin-right: $size-default;
+    }
+    &__form {
+        display: inline-block;
+    }
+    &__input {
+        margin: $size-small;
+    }
+}
