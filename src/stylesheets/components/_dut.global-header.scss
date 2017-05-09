@@ -48,6 +48,10 @@
             text-decoration: underline;
             color: $white;
         }
+        &:visited{
+            color: $white !important;
+            text-decoration: none !important;
+        }
     }
     &__dept-link {
         color: inherit;
@@ -55,6 +59,10 @@
         &:hover {
             text-decoration: underline;
             color: $white;
+        }
+        &:visited{
+            color: $white !important;
+            text-decoration: none !important;
         }
     }
     &__abbr {
