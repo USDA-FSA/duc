@@ -15,15 +15,22 @@
 
                 <h4>Notes:</h4>
                 <ul>
-                    <li>All buttons SHALL use an action word to start the label. eg. "View Details" vs. "Details"</li>
-                    <li>All buttons SHALL be aligned left to the application or form.</li>
-                    <li>A Cancel button SHALL NOT be used unless the the form uses a multi-step process.</li>
-                    <li>A Cancel button SHALL be used in a Multi-step or multiple screen process so the User feels safe that they are aborting a process.</li>
-                    <li>A Cancel or Close button action SHALL clear the contents of the form for security/privacy purposes.</li>
-                    <li>When used, the Cancel button SHALL appear to the right of the Submit button.</li>
-                    <li>When used, the Cancel button SHALL appear as a link or Alternative button.</li>
-                    <li>In a multi-step or multiple screen process, Back and Next SHALL be used, and Submit SHALL conclude the process and form submission.</li>
-                    <li>A Reset or Clear button SHALL NOT be used on a form, because studies indicate a much higher percentage of accidental usage.</li>
+                    <li>All buttons <strong>SHALL</strong> use an action word to start the label. eg. "View Details" vs. "Details"</li>
+                    <li>All buttons <strong>SHALL</strong> be aligned left to the application or online form.</li>
+                    <li>A Cancel button <strong>SHALL NOT</strong> be used unless the online form uses a multi-step process.</li>
+                    <li>A Cancel button <strong>SHALL</strong> be used in a Multi-step or multiple screen process so the User feels safe that they are aborting a process.</li>
+                    <li>A Cancel or Close button action <strong>SHALL</strong> clear the contents of the online form for security/privacy purposes.</li>
+                    <li>When used, the Cancel button <strong>SHALL</strong> appear to the right of the Submit button.</li>
+                    <li>When used, the Cancel button <strong>SHALL</strong> appear as a link or Alternative button.</li>
+                    <li>In a multi-step or multiple screen process, Back and Next <strong>SHALL</strong> be used, and Submit <strong>SHALL</strong> conclude the process and online form submission.</li>
+                    <li>In a multi-step or multiple screen process, the saving of data or state is implied and clicking the Back button <strong>SHALL NOT</strong> delete data that has been entered.</li>
+                    <li>Reset &amp; Clear buttons:
+                        <ul>
+                            <li>Reset - defined as removing all data and returning to the initial state of the application or online form inputs.</li>
+                            <li>Clear - defined as removing all data from application or online form fields.</li>
+                            <li>Reset and Clear buttons, if used, <strong>SHALL NOT</strong> be placed next to Next, Submit, or Save buttons.</li>
+                        </ul>
+                    </li>
                 </ul>
 
             </div>
@@ -31,20 +38,27 @@
                 <h2>Which Label to use?</h2>
                 
                 <button class="fsa-btn fsa-btn--primary" type="button">Submit</button> vs. <button class="fsa-btn fsa-btn--primary" type="button">Save</button>
-                <p>Use Submit for a button lebel when the User is anonymous. Use a Save label when the User is logged into a system and will be updating data within a system.</p>
+                <p>Use Submit for a button label when providing data that will not be stored, or if the data is submitted by an anonymous User. Use a Save label when the User is authenticated and will be updating data within a system.</p>
+                <ul>
+                <li>Submit Example: Use for submitting data to generate a report.</li>
+                    <li>Save Example: Use for updating User profile information or preferences.</li>
+                </ul>
                 <hr/>                
                 
                 <button class="fsa-btn fsa-btn--primary" type="button">Search</button> vs. <button class="fsa-btn fsa-btn--primary" type="button">Submit</button>
                 <p>Always use Search as the button label when there is a query involved. The Search label is now more accepted for use that the Submit Label when performing a search.</p>
                 <hr/>
                 <button class="fsa-btn fsa-btn--primary" type="button">Back</button> vs. <button class="fsa-btn fsa-btn--alt" type="button">Cancel</button> vs. <button class="fsa-btn fsa-btn--primary" type="button">Exit</button>
-                <p>When returning to a previous screen or step, use Back as the button label. When ceasing a process, such as updating your profile, use Cancel as the button label. Exit SHALL NOT be used as it implies closing of an application.</p>
+                <p>When returning to a previous screen or step, use Back as the button label. When ceasing a process, such as updating your profile, use Cancel as the button label. Exit <strong>SHALL NOT</strong> be used in the context of returning to a previous screen, as it could imply exiting the application as opposed to the process in the application.</p>
                 <hr/>
                 <button class="fsa-btn fsa-btn--primary" type="button">Refresh</button> vs. <button class="fsa-btn fsa-btn--primary" type="button">Reload</button> vs. <button class="fsa-btn fsa-btn--tertiary" type="button">Reset</button>
-                <p>When data or a state in the application has changed, it is recommended to use Refresh as a label. The Reload label implies getting more data, while Refresh is a more general and User friendly term. Reset SHALL NOT be used as it implies the clearing or deleting of data.</p>
+                <p>When data or a state in the application has changed, it is recommended to use Refresh as a label. The Reload label implies getting more data, while Refresh is a more general and User friendly term. Reset <strong>SHALL NOT</strong> be used as it implies the clearing or deleting of data and returning to initial state.</p>
+                <hr/>
+                <a href="#" class="dut-button-demo__cancel-link">Cancel</a> or <button class="fsa-btn fsa-btn--alt" type="button">Cancel</button>
+                <p>When used, the Cancel button can be used as either a text link or a button with Alt style. The Cancel text link is preferred.</p>
                 <hr/>
                 <button class="fsa-btn fsa-btn--tertiary" type="button">Delete</button> or <button class="fsa-btn fsa-btn--tertiary" type="button">Reset</button>
-                <p>A button SHALL use the Tertiary style when the function has descructive capabilities.</p>
+                <p>A button <strong>SHALL</strong> use the Tertiary style when the action taken has descructive capabilities.</p>
             </div>
         </div>
 
@@ -55,8 +69,8 @@
 
         <div class="dut-button-demo">
             <div class="dut-button-demo__section">
-                <h2>Single Screen Form</h2>
-                <!--<p>In use with a single screen form, a Clear button CAN be used to clear the contents of the form. A Submit button SHALL always be used. The Submit button SHALL always be the far right-side button in a sequence. See below example.</p>-->
+                <h2>Single Screen Online Form</h2>
+                <!--<p>In use with a single screen online form, a Clear button CAN be used to clear the contents of the online form. A Submit button <strong>SHALL</strong> always be used. The Submit button <strong>SHALL</strong> always be the far right-side button in a sequence. See below example.</p>-->
                 <div class="dut-button-demo__form">
 
                     <input class="fsa-input fsa-input--block dut-button-demo__input" type="text" name="some_name" value="">
@@ -74,7 +88,7 @@
     <div class="dut-section__bd">
         <div class="dut-button-demo">
             <div class="dut-button-demo__section">
-                <h2>Single Screen Form - Popup Modal</h2>
+                <h2>Single Screen Online Form - Popup Modal</h2>
                 <div class="dut-button-demo__popup">
                     <div class="dut-button-demo__popup-header">Close <img src="img/close.svg" width="12px" /></div>
                     <div class="dut-button-demo__form">
@@ -95,7 +109,7 @@
     <div class="dut-section__bd">
         <div class="dut-button-demo">
             <div class="dut-button-demo__section">
-                <h2>Multiple Screen Form</h2>
+                <h2>Multiple Screen Online Form</h2>
                 <div class="dut-button-demo__form">
                     <h3>Step 2 of 5</h3>
                     <input class="fsa-input fsa-input--block dut-button-demo__input" type="text" name="some_name" value="">
@@ -114,7 +128,7 @@
     <div class="dut-section__bd">
         <div class="dut-button-demo">
             <div class="dut-button-demo__section">
-                <h2>Multiple Screen Form (Final Step)</h2>
+                <h2>Multiple Screen Online Form (Final Step)</h2>
 
                 <div class="dut-button-demo__form">
                     <h3>Step 5 of 5</h3>
@@ -134,7 +148,7 @@
     <div class="dut-section__bd">
         <div class="dut-button-demo">
             <div class="dut-button-demo__section">
-                <h2>Multiple Screen Form - Popup Modal</h2>
+                <h2>Multiple Screen Online Form - Popup Modal</h2>
                 <div class="dut-button-demo__popup">
                     <div class="dut-button-demo__popup-header">Close <img src="img/close.svg" width="12px" /></div>
                     <div class="dut-button-demo__form">
@@ -158,7 +172,7 @@
     <div class="dut-section__bd">
         <div class="dut-button-demo">
             <div class="dut-button-demo__section">
-                <h2>Multiple Screen Form - Popup Modal (Final Step)</h2>
+                <h2>Multiple Screen Online Form - Popup Modal (Final Step)</h2>
                 <div class="dut-button-demo__popup">
                     <div class="dut-button-demo__popup-header">Close <img src="img/close.svg" width="12px" /></div>
                     <div class="dut-button-demo__form">
@@ -181,7 +195,7 @@
     <div class="dut-section__bd">
         <div class="dut-button-demo">
             <div class="dut-button-demo__section">
-                <h2>Search Form</h2>
+                <h2>Search Online Form</h2>
 
                 <div class="dut-button-demo__form">
 
