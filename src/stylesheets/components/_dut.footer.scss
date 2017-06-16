@@ -36,4 +36,9 @@
         padding-left: $size-base * 10;
     }
     
+    &__cat-header {
+        color: $white !important;
+        font-weight: bold;
+    }
+    
 }
