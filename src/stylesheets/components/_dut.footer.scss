@@ -37,6 +37,8 @@
     }
     
     &__cat-header {
+        font-family: $font-sans;
+        @include h3();
         color: $white !important;
         font-weight: bold;
     }
