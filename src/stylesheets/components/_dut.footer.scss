@@ -11,7 +11,6 @@
         padding: 4vh 0;
         color: white;
     }
-    
     &__link {
         color: $white;
         text-decoration: none;
@@ -19,28 +18,26 @@
             color: $white !important;
             text-decoration: underline;
         }
-        &:visited{
+        &:visited {
             color: $white !important;
             text-decoration: none;
         }
     }
-    
-    &__rt-divider{
+    &__rt-divider {
         border-right: 1px solid $color-fsa-tertiary-200;
         margin-right: $size-base * 10;
     }
-    
-    &__lt-divider{
+    &__lt-divider {
         border-left: 1px solid $color-fsa-tertiary-200;
         margin-left: $size-base * 10;
         padding-left: $size-base * 10;
     }
-    
     &__cat-header {
         font-family: $font-sans;
         @include h3();
         color: $white !important;
         font-weight: bold;
+        margin-top: $size-base;
+        margin-bottom: $size-base * 6;
     }
-    
 }
