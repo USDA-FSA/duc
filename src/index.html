@@ -1,80 +1,73 @@
-{% include: 'includes/html.html' %}
-
-{% include: 'includes/head.html' @title:'FSA Usability Guide' %}
+{% include: 'includes/html.html' %} {% include: 'includes/head.html' @title:'FSA Usability Guide' %}
 
 <body>
 
-    {% include: 'includes/fsa-browser-upgrade.html' %}
+  {% include: 'includes/fsa-browser-upgrade.html' %} {% include: 'includes/skipnav.html' %} {% include: 'includes/dut-global-header.html' %}
 
-    {% include: 'includes/skipnav.html' %}
+  <header>
+    {% include: 'includes/dut-header.html' %} {% include: 'includes/dut-topnav.html' %}
+  </header>
 
-    {% include: 'includes/dut-global-header.html' %}
+  <main id="main-content" tabindex="-1">
 
-    <header>
-        {% include: 'includes/dut-header.html' %}
+    <div class="dut-section">
 
-        {% include: 'includes/dut-topnav.html' %}
-    </header>
+      <div class="dut-section__bd">
 
-    <main id="main-content" tabindex="-1">
+        <h1>Acreage Report Search</h1>
 
-        <div class="dut-section">
+        <div class="fsa-grid">
+          <div class="fsa-grid__1 fsa-grid__4/12@l">
+            Year: <strong>2018</strong>
+          </div>
+          <div class="fsa-grid__1 fsa-grid__4/12@l">
+            State: <strong>Texas (48)</strong>
+          </div>
+          <div class="fsa-grid__1 fsa-grid__4/12@l">
+            Country: <strong>Medina (325)</strong>
+          </div>
+          <div class="fsa-grid__1 fsa-grid__12/12@l">
+            <p class="fsa-text--lead">
+              Please enter a farm number or search for a producer in SCIMS
+            </p>
+            <p>
+              <input class="fsa-radio" id="lorem-ipsum-9" type="radio" name="lorem-ipsum-9" value="lorem-ipsum-9">
+              <label for="lorem-ipsum-9">Producer</label>
+            </p>
+            <p>
+              <input class="fsa-radio" id="lorem-ipsum-9" type="radio" name="lorem-ipsum-9" value="lorem-ipsum-9">
+              <label for="lorem-ipsum-9">Farm Number:</label>
+              <input class="fsa-input" type="text" name="1iuoytytesgdf" value="" placeholder="Farm Number">
 
-            <div class="dut-section__bd">
-
-                <h1>Acreage Report Search</h1>
-
-                <div class="fsa-grid">
-                    <div class="fsa-grid__1 fsa-grid__4/12@l">
-                        Year: <strong>2018</strong>
-                    </div>
-                    <div class="fsa-grid__1 fsa-grid__4/12@l">
-                        State: <strong>Texas (48)</strong>
-                    </div>
-                    <div class="fsa-grid__1 fsa-grid__4/12@l">
-                        Country: <strong>Medina (325)</strong>
-                    </div>
-                    <div class="fsa-grid__1 fsa-grid__12/12@l">
-                    <p class="fsa-text--lead">
-                        Please enter a farm number or search for a producer in SCIMS
-                    </p>
-                    <p>
-                      <input class="fsa-radio" id="lorem-ipsum-9" type="radio" name="lorem-ipsum-9" value="lorem-ipsum-9">
-                      <label for="lorem-ipsum-9">Producer</label>
-                    </p>
-                    <p>
-                      <input class="fsa-radio" id="lorem-ipsum-9" type="radio" name="lorem-ipsum-9" value="lorem-ipsum-9">
-                      <label for="lorem-ipsum-9">Farm Number:</label><input class="fsa-input" type="text" name="1iuoytytesgdf" value="" placeholder="Farm Number">
-
-                    </p>
-                        <button class="fsa-btn fsa-btn--primary" type="button">Search</button> <a href="#" class="dut-button__cancel-link">Cancel</a>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-      <div class="dut-section dut-section--light">
-
-        <div class="dut-section__bd">
-          <h1>Original Screenshot</h1>
-          <a href="img/report-screen1.png" target="blank"><img src="img/report-screen1.png" width="700"/></a>
-
+            </p>
+            <button class="fsa-btn fsa-btn--primary" type="button">Search</button> <a href="#" class="dut-button__cancel-link">Cancel</a>
+          </div>
         </div>
 
       </div>
 
+    </div>
 
-        {% include: 'includes/dut-screen-id.html' %}
+    <div class="dut-section dut-section--light">
 
-    </main>
+      <div class="dut-section__bd">
+        <h1>Original Screenshot</h1>
+        <a href="img/report-screen1.png" target="blank"><img src="img/report-screen1.png" width="700" /></a>
 
-    <footer>
-        {% include: 'includes/dut-footer.html' %}
-    </footer>
+      </div>
 
-    {% include: 'includes/scripts.html' %}
+    </div>
+
+
+    {% include: 'includes/dut-screen-id.html' %}
+
+  </main>
+
+  <footer>
+    {% include: 'includes/dut-footer.html' %}
+  </footer>
+
+  {% include: 'includes/scripts.html' %}
 
 </body>
 
